@@ -13,9 +13,12 @@
     />
 
     <mat-autocomplete autoActiveFirstOption #name>
-      <mat-option [value]="color" *ngFor="let color of filteroption | async">{{
-        color
-      }}</mat-option>
+      <mat-option
+        [value]="color.code"
+        *ngFor="let color of filteroptionList | async"
+      >
+        {{ color.code }} - {{ color.name }}</mat-option
+      >
     </mat-autocomplete></mat-form-field
   >
 </form>
