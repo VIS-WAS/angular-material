@@ -1,0 +1,21 @@
+<h3>Auto complete</h3>
+
+<form action="" class="example-form">
+  <mat-form-field>
+    <mat-label>Colors</mat-label>
+
+    <input
+      type="text"
+      placeholder="Please choose one color"
+      matInput
+      [matAutocomplete]="name"
+      [formControl]="formControl"
+    />
+
+    <mat-autocomplete autoActiveFirstOption #name>
+      <mat-option [value]="color" *ngFor="let color of filteroption | async">{{
+        color
+      }}</mat-option>
+    </mat-autocomplete></mat-form-field
+  >
+</form>
