@@ -8,9 +8,11 @@ import { InputComponent } from './input/input.component';
 import { MaterialModule } from './material/material.module';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MenubarComponent } from './menubar/menubar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, InputComponent, AutocompleteComponent],
+  declarations: [AppComponent, InputComponent, AutocompleteComponent, MenubarComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
