@@ -4,6 +4,7 @@ import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { InputComponent } from './input/input.component';
 import { HomeComponent } from './home/home.component';
 import { MatCardComponent } from './mat-card/mat-card.component';
+import { MatSliderComponent } from './mat-slider/mat-slider.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
 
   { path: 'autocomplete', component: AutocompleteComponent },
   { path: 'card', component: MatCardComponent },
+  { path: 'slider', component: MatSliderComponent },
 ];
 
 @NgModule({

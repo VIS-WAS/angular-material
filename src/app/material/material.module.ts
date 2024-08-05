@@ -18,6 +18,8 @@ import { MatListModule } from '@angular/material/list';
 
 import { MatCardModule } from '@angular/material/card';
 
+import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
   declarations: [],
   imports: [CommonModule],
@@ -34,6 +36,7 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatSliderModule,
   ],
 })
 export class MaterialModule {}
