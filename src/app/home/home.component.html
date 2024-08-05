@@ -1,1 +1,37 @@
-<h1>Learning angular Material</h1>
+<button mat-icon-button (click)="badgeVisible()">
+  <mat-icon matBadge="3" color="warn" [matBadgeHidden]="badgeVisibility"
+    >favorite</mat-icon
+  >
+</button>
+
+<h1 style="font-size: large">Learning angular Material</h1>
+
+<button matBadge="2" matBadgeColor="warn" mat-raised-button color="primary">
+  Messages</button
+><br />
+<div style="margin: 20px 0">
+  <button
+    matBadgeSize="large"
+    matBadge="2"
+    matBadgeColor="warn"
+    mat-raised-button
+    color="primary"
+  >
+    Messages
+  </button>
+</div>
+
+<div style="margin: 20px 0">
+  <button
+    matBadgeHidden="false"
+    matBadgeOverlap="false"
+    matBadgePosition="before"
+    matBadgeSize="large"
+    matBadge="2"
+    matBadgeColor="warn"
+    mat-raised-button
+    color="primary"
+  >
+    Messages
+  </button>
+</div>
