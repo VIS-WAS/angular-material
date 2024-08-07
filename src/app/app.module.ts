@@ -12,6 +12,8 @@ import { MenubarComponent } from './menubar/menubar.component';
 import { HomeComponent } from './home/home.component';
 import { MatCardComponent } from './mat-card/mat-card.component';
 import { MatSliderComponent } from './mat-slider/mat-slider.component';
+import { MatTableComponent } from './mat-table/mat-table.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { MatSliderComponent } from './mat-slider/mat-slider.component';
     HomeComponent,
     MatCardComponent,
     MatSliderComponent,
+    MatTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { MatSliderComponent } from './mat-slider/mat-slider.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
