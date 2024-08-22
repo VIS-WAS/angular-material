@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { colorentiry } from '../Entity/colorentity';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Customer } from '../Model/Customer';
 
 @Injectable({
@@ -21,7 +21,10 @@ export class MasterService {
 
   GetCustomer(): Observable<Customer[]> {
     return this.http.get<Customer[]>(
-      'https://mocki.io/v1/a9c7d25f-6544-4896-b25b-a69156c508ce'
+      'https://mocki.io/v1/3deb245f-f358-4c8e-a54f-5b28214a3459'
     );
   }
 }
+
+////----------below with customer:
+// 'https://mocki.io/v1/fc80d03e-4653-4c5f-b368-14d378f0bc4e';

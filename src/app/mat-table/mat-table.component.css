@@ -4,3 +4,6 @@ mat-card {
 button {
   margin: 2px;
 }
+th {
+  background-color: #6fb5c7;
+}
