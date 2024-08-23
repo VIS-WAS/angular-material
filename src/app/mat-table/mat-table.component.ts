@@ -127,8 +127,9 @@ export class MatTableComponent implements OnInit {
   }
 
   Filterchange(data: Event) {
-    // console.log(data);
     const value = (data.target as HTMLInputElement).value;
+    // this.dataSource.filter = data.target.value;  // ------ take data as argument of type any
+    // console.log(this.dataSource);
 
     this.dataSource.filter = value;
   }
