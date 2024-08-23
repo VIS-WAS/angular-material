@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { MatCardComponent } from './mat-card/mat-card.component';
 import { MatSliderComponent } from './mat-slider/mat-slider.component';
 import { MatTableComponent } from './mat-table/mat-table.component';
+import { FormDesignComponent } from './form-design/form-design.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'table',
     component: MatTableComponent,
+  },
+  {
+    path: 'forms',
+    component: FormDesignComponent,
   },
 ];
 
