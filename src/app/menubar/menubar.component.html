@@ -65,10 +65,14 @@
         </button>
       </mat-list-item>
       <mat-list-item>
-        <button mat-button><mat-icon>analytics </mat-icon>Analytics</button>
+        <button mat-button (click)="openPopUp()">
+          <mat-icon>open_in_browser </mat-icon>Add user to Table
+        </button>
       </mat-list-item>
       <mat-list-item>
-        <button mat-button><mat-icon>favorites </mat-icon>Favorites</button>
+        <button mat-button [routerLink]="'posts'">
+          <mat-icon>assignment </mat-icon>Posts
+        </button>
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>

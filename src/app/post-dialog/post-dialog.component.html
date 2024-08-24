@@ -1,0 +1,45 @@
+<form (ngSubmit)="postSaved()" [formGroup]="postform">
+  <h1 mat-dialog-title>Add you post here</h1>
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input type="text" matInput formControlName="first_name" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Last name</mat-label>
+      <input type="text" matInput formControlName="last_name" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>emailId</mat-label>
+      <input type="text" matInput formControlName="emailId" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>age</mat-label>
+      <input type="text" matInput formControlName="age" />
+    </mat-form-field>
+
+    <label id="example-radio-group-label">Gender</label>
+    <mat-radio-group formControlName="gender">
+      <mat-radio-button *ngFor="let gender of genders" [value]="gender">
+        {{ gender }}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field>
+      <mat-label>mobilenumber</mat-label>
+      <input type="text" matInput formControlName="mobilenumber" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>adhaar_no</mat-label>
+      <input type="text" matInput formControlName="adhaar_no" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>pan_no</mat-label>
+      <input type="text" matInput formControlName="pan_no" />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>No Thanks</button>
+    <button mat-button type="submit">Ok</button>
+  </div>
+</form>

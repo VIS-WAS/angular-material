@@ -4,7 +4,6 @@ import { Customer } from '../Model/Customer';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { map, pluck } from 'rxjs';
 
 export interface PeriodicElement {
   code: number;
@@ -95,14 +94,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class MatTableComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  // displayedColumns: string[] = [
-  //   'code',
-  //   'name',
-  //   'phone',
-  //   'symbol',
-  //   'action',
-  // ];
-  // dataSource = ELEMENT_DATA;
 
   customerList!: Customer[];
   dataSource: any;

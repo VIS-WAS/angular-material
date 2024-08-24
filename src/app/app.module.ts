@@ -15,6 +15,9 @@ import { MatSliderComponent } from './mat-slider/mat-slider.component';
 import { MatTableComponent } from './mat-table/mat-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormDesignComponent } from './form-design/form-design.component';
+import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostDialogComponent } from './post-dialog/post-dialog.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { FormDesignComponent } from './form-design/form-design.component';
     MatSliderComponent,
     MatTableComponent,
     FormDesignComponent,
+    MatDialogComponent,
+    PostsComponent,
+    PostDialogComponent,
   ],
   imports: [
     BrowserModule,
