@@ -18,6 +18,7 @@ import { FormDesignComponent } from './form-design/form-design.component';
 import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostDialogComponent } from './post-dialog/post-dialog.component';
+import { AssociateComponent } from './associate/associate.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { PostDialogComponent } from './post-dialog/post-dialog.component';
     MatDialogComponent,
     PostsComponent,
     PostDialogComponent,
+    AssociateComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { MatSliderComponent } from './mat-slider/mat-slider.component';
 import { MatTableComponent } from './mat-table/mat-table.component';
 import { FormDesignComponent } from './form-design/form-design.component';
 import { PostsComponent } from './posts/posts.component';
+import { AssociateComponent } from './associate/associate.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'posts',
     component: PostsComponent,
+  },
+  {
+    path: 'associate',
+    component: AssociateComponent,
   },
 ];
 
